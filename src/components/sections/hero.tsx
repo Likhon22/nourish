@@ -1,26 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
+import { VideoBanner } from "../ui/video-banner";
 
 export function Hero() {
     return (
-        <section className="relative h-screen w-full overflow-hidden flex items-end justify-start pb-20 px-6 lg:px-12">
-            {/* Video Background */}
-            <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="absolute inset-0 w-full h-full object-cover z-0"
-            >
-                <source src="/videos/nourish1-C8QCRO6v.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-
-            {/* Dark Overlay for Contrast */}
-            <div className="absolute inset-0 bg-black/30 z-10" />
-
+        <VideoBanner
+            videoSrc="/videos/nourish1-C8QCRO6v.mp4"
+            heightClass="h-screen"
+            containerClass="items-end justify-start pb-20 px-6 lg:px-12"
+        >
             {/* Content - Bottom Left Aligned */}
             <div className="relative z-20 max-w-4xl text-left">
                 <motion.h1
@@ -33,6 +22,6 @@ export function Hero() {
                     Nourishing People, Place, & Planet
                 </motion.h1>
             </div>
-        </section>
+        </VideoBanner>
     );
 }

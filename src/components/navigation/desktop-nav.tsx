@@ -35,13 +35,15 @@ export function DesktopNav({ isScrolled }: DesktopNavProps) {
                                         isScrolled ? "text-slate-700 hover:text-slate-900" : "text-white/90 hover:text-white"
                                     )}
                                 >
-                                    {link.label}
-                                    <span
-                                        className={cn(
-                                            "absolute bottom-[2px] left-0 w-[calc(100%-1.25rem)] h-[2px] bg-slate-700 transition-transform duration-300 origin-left scale-x-0 group-hover/item:scale-x-100 group-data-[state=open]/item:scale-x-100",
-                                            !isScrolled && "bg-white"
-                                        )}
-                                    />
+                                    <Link href={link.href} className="w-full h-full flex items-center">
+                                        {link.label}
+                                        <span
+                                            className={cn(
+                                                "absolute bottom-[2px] left-0 w-[calc(100%-1.25rem)] h-[2px] bg-slate-700 transition-transform duration-300 origin-left scale-x-0 group-hover/item:scale-x-100 group-data-[state=open]/item:scale-x-100",
+                                                !isScrolled && "bg-white"
+                                            )}
+                                        />
+                                    </Link>
                                 </NavigationMenuTrigger>
                                 <NavigationMenuContent>
                                     <MegaMenu {...link.megaMenu} />

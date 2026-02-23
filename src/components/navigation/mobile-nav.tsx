@@ -61,7 +61,9 @@ export function MobileNav({ isScrolled }: MobileNavProps) {
                                 {link.megaMenu ? (
                                     <>
                                         <AccordionTrigger className="px-6 py-4 text-base font-semibold text-slate-800 hover:text-green-600 hover:no-underline transition-colors uppercase tracking-wider">
-                                            {link.label}
+                                            <Link href={link.href} onClick={() => setOpen(false)} className="w-full text-left">
+                                                {link.label}
+                                            </Link>
                                         </AccordionTrigger>
                                         <AccordionContent className="bg-slate-50/50 pb-2">
                                             {/* Sub-links with hover underline */}
