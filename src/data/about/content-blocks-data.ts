@@ -1,9 +1,7 @@
-// ─── Types ───────────────────────────────────────────────────────────────────
 
-/** A single bullet — term (optional, bold) + body text */
 export interface BulletItem {
-    term?: string;   // e.g. "Food Security" — rendered bold, followed by a colon
-    text: string;    // The rest of the bullet text
+    term?: string;
+    text: string;
 }
 
 /** A content group in the right column */
@@ -33,7 +31,7 @@ export interface ContentBlockData {
     quote?: string;
 }
 
-// ─── Data ────────────────────────────────────────────────────────────────────
+// ─── Data 
 
 export const ABOUT_CONTENT_BLOCKS: ContentBlockData[] = [
     {
