@@ -5,6 +5,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { TIMELINE_DATA } from "@/data/about/timeline-data";
 import { TimelineCard } from "./timeline-card";
 
+import { SectionHeader } from "../../ui/section-header";
+
 export function AboutTimeline() {
     const containerRef = useRef<HTMLDivElement>(null);
     const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -49,16 +51,16 @@ export function AboutTimeline() {
         <section className="py-24 bg-white overflow-hidden" ref={containerRef}>
             <div className="max-w-7xl mx-auto px-6">
 
-                {/* Section Header — static, no animation */}
-                <div className="text-center mb-24">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
-                        Our Story &amp; Evolution (2000–2025)
-                    </h2>
-                    <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
-                        From humble beginnings to national leadership, Nourish&apos;s journey reflects
-                        Bangladesh&apos;s agricultural renaissance.
-                    </p>
-                </div>
+                {/* Section Header */}
+                <SectionHeader
+                    className="mb-24"
+                    title={
+                        <>
+                            Our Story & Evolution <span className="font-normal opacity-90">(2000–2025)</span>
+                        </>
+                    }
+                    description="From humble beginnings to national leadership, Nourish's journey reflects Bangladesh's agricultural renaissance."
+                />
 
                 {/* Timeline Container */}
                 <div className="relative max-w-5xl mx-auto">
