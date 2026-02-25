@@ -5,7 +5,7 @@ export const NAV_LINKS = [
         megaMenu: {
             headline: "About Us",
             subtext: "Learn our story, meet our leaders, and see how we measure impact.",
-            image: "/img/megamenu.jpg",
+            image: "/img/navigation/megamenu.jpg",
             links: [
                 { label: "Our Story & Evolution", href: "/about#story" },
                 { label: "Leadership & Governance", href: "/about#leadership" },
@@ -21,7 +21,7 @@ export const NAV_LINKS = [
         megaMenu: {
             headline: "Our Businesses",
             subtext: "From DOC & feed to circular solutions and value-added foods.",
-            image: "/img/megamenu.jpg",
+            image: "/img/navigation/megamenu.jpg",
             links: [
                 { label: "Poultry Division", href: "/business/poultry-division" },
                 { label: "Dairy & Livestock", href: "/business/dairy-livestock" },
@@ -38,7 +38,7 @@ export const NAV_LINKS = [
         megaMenu: {
             headline: "Sustainability",
             subtext: "Our 3P philosophy: People, Place, Planet—put into action.",
-            image: "/img/megamenu.jpg",
+            image: "/img/navigation/megamenu.jpg",
             links: [
                 { label: "Circular Economy & Waste-to-Value", href: "/business/circular-economy-waste-to-value" },
                 { label: "Carbon & Water Footprint Reduction", href: "/business/carbon-water-footprint-reduction" },

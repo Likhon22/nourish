@@ -1,7 +1,7 @@
-import { SustainabilityBanner } from "@/components/sections/sustainability/sustainability-banner";
+import { SustainabilityBanner } from "@/components/features/sustainability/sustainability-banner";
 
-import { SectionHeader } from "@/components/ui/section-header";
-import { SustainabilityContentBlocks } from "@/components/sections/sustainability/sustainability-content-blocks";
+import { SectionHeader } from "@/components/ui/custom/section-header";
+import { SustainabilityContentBlocks } from "@/components/features/sustainability/sustainability-content-blocks";
 
 export default function SustainabilityPage() {
     return (

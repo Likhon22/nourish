@@ -1,6 +1,6 @@
-import { BusinessHero } from "@/components/sections/businesses/business-hero";
-import { BusinessSections } from "@/components/sections/businesses/business-sections";
-import { BUSINESS_SEGMENTS } from "@/data/businesses/business-segments-data";
+import { BusinessHero } from "@/components/features/businesses/business-hero";
+import { BusinessSections } from "@/components/features/businesses/business-sections";
+import { BUSINESS_SEGMENTS } from "@/data/content/businesses/business-segments-data";
 
 export const metadata = {
     title: "Our Businesses - Nourish",

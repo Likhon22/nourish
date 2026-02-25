@@ -1,8 +1,8 @@
-import { VideoBanner } from "@/components/ui/video-banner";
+import { VideoBanner } from "@/components/ui/custom/video-banner";
 import { motion } from "framer-motion";
-import { AboutHero } from "@/components/sections/about/about-hero";
-import { AboutTimeline } from "@/components/sections/about/about-timeline";
-import { AboutContentBlocks } from "@/components/sections/about/about-content-blocks";
+import { AboutHero } from "@/components/features/about/about-hero";
+import { AboutTimeline } from "@/components/features/about/about-timeline";
+import { AboutContentBlocks } from "@/components/features/about/about-content-blocks";
 
 export const metadata = {
     title: "About Us - Nourish",

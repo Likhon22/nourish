@@ -1,8 +1,8 @@
-import { Hero } from "@/components/sections/hero";
-import { ImpactSection } from "@/components/sections/impact-section";
-import { StorySection } from "@/components/sections/story-section";
-import { BusinessSection } from "@/components/sections/business-section";
-import { SustainabilitySection } from "@/components/sections/sustainability-section";
+import { Hero } from "@/components/features/home/hero";
+import { ImpactSection } from "@/components/features/home/impact-section";
+import { StorySection } from "@/components/features/home/story-section";
+import { BusinessSection } from "@/components/features/home/business-section";
+import { SustainabilitySection } from "@/components/features/home/sustainability-section";
 
 export default function Home() {
   return (
