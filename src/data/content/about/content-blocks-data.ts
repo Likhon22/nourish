@@ -35,7 +35,7 @@ export interface ContentBlockData {
 
 export const ABOUT_CONTENT_BLOCKS: ContentBlockData[] = [
     {
-        id: "block-1",
+        id: "dna",
         image: "/img/business/business_farmers.jpg",
         imageCaption: "The Nourish DNA",
         leftTitle: "Our Vision: Nourishing People, Places, and the Planet",
@@ -90,7 +90,7 @@ export const ABOUT_CONTENT_BLOCKS: ContentBlockData[] = [
         ],
     },
     {
-        id: "block-2",
+        id: "leadership",
         image: "/img/content/farmer-home.jpg",
         imageCaption: "Leadership & Governance",
         leftTitle: "Our Philosophy",
@@ -105,7 +105,7 @@ export const ABOUT_CONTENT_BLOCKS: ContentBlockData[] = [
         ],
     },
     {
-        id: "block-3",
+        id: "contribution",
         image: "/img/business/business_2.jpg",
         imageCaption: "Our Contribution",
         leftTitle: "Feeding a Nation, Empowering a Generation",
@@ -126,7 +126,7 @@ export const ABOUT_CONTENT_BLOCKS: ContentBlockData[] = [
         quote: "Every meal is a shared responsibility — to nourish bodies, uplift lives, and sustain futures."
     },
     {
-        id: "block-4",
+        id: "awards",
         image: "/img/content/values-home.jpg",
         imageCaption: "Global Recognition",
         leftTitle: "Recognitions & Global Excellence",

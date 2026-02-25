@@ -23,13 +23,13 @@ export const NAV_LINKS = [
             subtext: "From DOC & feed to circular solutions and value-added foods.",
             image: "/img/navigation/megamenu.jpg",
             links: [
-                { label: "Poultry Division", href: "/business/poultry-division" },
-                { label: "Dairy & Livestock", href: "/business/dairy-livestock" },
-                { label: "Agriculture", href: "/business/agriculture" },
-                { label: "Eggs", href: "/business/eggs" },
-                { label: "Processed & Packaged Foods", href: "/business/processed-packaged-foods" },
-                { label: "Retail & Consumer Brands", href: "/business/retail-consumer-brands" },
-                { label: "R&D & Digital", href: "/business/rnd-digital" },
+                { label: "Poultry Division", href: "/businesses#poultry-division" },
+                { label: "Dairy & Livestock", href: "/businesses#livestock-dairy" },
+                { label: "Agriculture", href: "/businesses#agriculture-aquaculture" },
+                { label: "Eggs", href: "/businesses#eggs" },
+                { label: "Processed & Packaged Foods", href: "/businesses#processed-packaged-foods" },
+                { label: "Retail & Consumer Brands", href: "/businesses#retail-consumer-brands" },
+                { label: "R&D & Digital", href: "/businesses#rd-digital-transformation" },
             ]
         }
     },
@@ -40,11 +40,11 @@ export const NAV_LINKS = [
             subtext: "Our 3P philosophy: People, Place, Planet—put into action.",
             image: "/img/navigation/megamenu.jpg",
             links: [
-                { label: "Circular Economy & Waste-to-Value", href: "/business/circular-economy-waste-to-value" },
-                { label: "Carbon & Water Footprint Reduction", href: "/business/carbon-water-footprint-reduction" },
-                { label: "Smallholder Empowerment", href: "/business/smallholder-empowerment" },
-                { label: "Animal Welfare & Ethics", href: "/business/animal-welfare-ethics" },
-                { label: "Certifications & Compliance", href: "/business/certifications-compliance" },
+                { label: "Circular Economy & Waste-to-Value", href: "/sustainability#circular-economy" },
+                { label: "Carbon & Water Footprint Reduction", href: "/sustainability#footprint" },
+                { label: "Smallholder Empowerment", href: "/sustainability#empowerment" },
+                { label: "Animal Welfare & Ethics", href: "/sustainability#animal-welfare" },
+                { label: "Certifications & Compliance", href: "/sustainability#compliance" },
             ]
         }
     },
