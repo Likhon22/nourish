@@ -25,7 +25,7 @@ export function ContentBlock({ block, index }: ContentBlockProps) {
     const imageScale = useTransform(scrollYProgress, [0, 1], [1, 0.88]);
 
     return (
-        <div className="w-full">
+        <div id={block.id} className="w-full">
             {/* ── STICKY IMAGE SECTION ─────────────────────────────────── */}
             <div ref={containerRef} className="relative h-[200vh]">
                 <div className="sticky top-0 h-screen w-full overflow-hidden px-4 md:px-8">

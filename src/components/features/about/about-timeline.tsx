@@ -48,7 +48,7 @@ export function AboutTimeline() {
     }, []);
 
     return (
-        <section className="py-24 bg-white overflow-hidden" ref={containerRef}>
+        <section id="story" className="py-24 bg-white overflow-hidden" ref={containerRef}>
             <div className="max-w-7xl mx-auto px-6">
 
                 {/* Section Header */}

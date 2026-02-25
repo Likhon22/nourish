@@ -2,7 +2,7 @@ import { ContentBlockData } from "../about/content-blocks-data";
 
 export const SUSTAINABILITY_CONTENT_BLOCKS: ContentBlockData[] = [
     {
-        id: "sustainability-block-1",
+        id: "circular-economy",
         image: "/img/business/business_processed.jpg",
         imageSubheading: "Sustainability at the Heart",
         imageCaption: "Circular Economy & Waste-to-Value",
@@ -46,7 +46,7 @@ export const SUSTAINABILITY_CONTENT_BLOCKS: ContentBlockData[] = [
         quote: "At Nourish, waste becomes wealth — a resource that fuels the next cycle of life."
     },
     {
-        id: "sustainability-block-2",
+        id: "footprint",
         image: "/img/content/values-home.jpg",
         imageSubheading: "Efficiency",
         imageCaption: "Carbon & Water Footprint Reduction",
@@ -78,7 +78,7 @@ export const SUSTAINABILITY_CONTENT_BLOCKS: ContentBlockData[] = [
         quote: "Every ton of feed, every liter of water, every joule of energy — accounted for, optimized, and respected."
     },
     {
-        id: "sustainability-block-3",
+        id: "empowerment",
         image: "/img/content/farmer-home.jpg",
         imageSubheading: "Smallholder Empowerment",
         imageCaption: "People",
@@ -108,7 +108,7 @@ export const SUSTAINABILITY_CONTENT_BLOCKS: ContentBlockData[] = [
         quote: "Prosperity is real only when it is shared."
     },
     {
-        id: "sustainability-block-4",
+        id: "animal-welfare",
         image: "/img/business/business_animalwelfare.jpg",
         imageSubheading: "Integrity",
         imageCaption: "Animal Welfare & Ethics",
@@ -138,7 +138,7 @@ export const SUSTAINABILITY_CONTENT_BLOCKS: ContentBlockData[] = [
         quote: "Every creature under our care is a trust — a niʿmah to be guarded with dignity."
     },
     {
-        id: "sustainability-block-5",
+        id: "compliance",
         image: "/img/business/business_sacks.jpg",
         imageSubheading: "Standards",
         imageCaption: "Certifications & Compliance",
