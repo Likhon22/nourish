@@ -48,5 +48,20 @@ export const NAV_LINKS = [
             ]
         }
     },
-    { label: "Contact", href: "/contact" },
+    {
+        label: "Contact",
+        href: "/contact",
+        megaMenu: {
+            headline: "Contact",
+            subtext: "Get in touch with our team for business, media, or support inquiries.",
+            image: "/img/navigation/megamenu.jpg",
+            links: [
+                { label: "Contact Form", href: "/contact#contact-form" },
+                { label: "Corporate Locations", href: "/contact#corporate-locations" },
+                { label: "Investor Relations", href: "/contact#investor-relations" },
+                { label: "Media Inquiries", href: "/contact#media-inquiries" },
+                { label: "WhatsApp Live Contact", href: "/contact#whatsapp-live-contact" },
+            ]
+        }
+    }
 ];
