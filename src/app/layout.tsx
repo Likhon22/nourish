@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/navbar/navbar";
+import { Footer } from "@/components/layout/footer";
 import { HashScrollHandler } from "@/components/navigation/hash-scroll-handler";
 import { Suspense } from "react";
 
@@ -36,6 +37,7 @@ export default function RootLayout({
         </Suspense>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
