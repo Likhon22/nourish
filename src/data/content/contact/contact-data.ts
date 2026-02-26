@@ -8,14 +8,7 @@ export interface LocationData {
     image: string;
 }
 
-export interface InquiryContact {
-    id: string;
-    title: string;
-    description: string;
-    email: string;
-    phone?: string;
-    icon: string;
-}
+
 
 export const CORPORATE_LOCATIONS: LocationData[] = [
     {

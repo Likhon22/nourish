@@ -63,5 +63,18 @@ export const NAV_LINKS = [
                 { label: "WhatsApp Live Contact", href: "/contact#whatsapp-live-contact" },
             ]
         }
+    },
+    {
+        label: "Careers",
+        href: "/careers",
+        megaMenu: {
+            headline: "Careers",
+            subtext: "Build your future with us—grow, lead, and make meaningful impact.",
+            image: "/img/navigation/megamenu.jpg",
+            links: [
+                { label: "Why Work With Us", href: "/careers#why-work-with-us" },
+                { label: "Culture & Growth", href: "/careers#culture-growth" },
+            ]
+        }
     }
 ];

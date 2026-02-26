@@ -2,9 +2,7 @@
 
 import { motion } from "framer-motion";
 import { INVESTOR_CONTACT } from "@/data/content/contact/contact-data";
-import { SectionHeader } from "@/components/ui/custom/section-header";
 import { Briefcase, Mail, Phone, FileText } from "lucide-react";
-import { PrimaryButton } from "@/components/ui/custom/primary-button";
 
 export function InvestorRelations() {
     return (

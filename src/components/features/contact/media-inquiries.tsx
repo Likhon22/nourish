@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { MEDIA_CONTACT } from "@/data/content/contact/contact-data";
-import { Megaphone, Mail, Phone, Download } from "lucide-react";
+import { Megaphone, Mail, Phone } from "lucide-react";
 import Image from "next/image";
 
 export function MediaInquiries() {
