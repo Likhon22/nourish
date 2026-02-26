@@ -8,7 +8,7 @@ export function CareersHero() {
             badge="Join the Team"
             title="Build Your Future with Nourish"
             description="Grow, lead, and make meaningful impact. Join a movement that is feeding a nation and empowering thousands of lives across Bangladesh."
-            bgClassName="bg-slate-900"
+            bgClassName="bg-gradient-to-br from-slate-700 via-slate-900 to-slate-950"
         />
     );
 }

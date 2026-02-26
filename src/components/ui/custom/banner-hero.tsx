@@ -30,9 +30,10 @@ export function BannerHero({
             "relative pt-32 pb-16 lg:pt-40 lg:pb-24 overflow-hidden min-h-[60vh] flex items-center",
             bgClassName
         )}>
-            {/* Subtle radial glow for depth */}
-            <div className="absolute inset-0 opacity-10 pointer-events-none z-0">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,_var(--tw-gradient-stops))] from-white via-transparent to-transparent" />
+            {/* Subtle radial glow and gradient overlay for depth */}
+            <div className="absolute inset-0 z-0">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-transparent pointer-events-none" />
             </div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10 text-center w-full">
