@@ -1,7 +1,8 @@
 import { SustainabilityBanner } from "@/components/features/sustainability/sustainability-banner";
 
 import { SectionHeader } from "@/components/ui/custom/section-header";
-import { SustainabilityContentBlocks } from "@/components/features/sustainability/sustainability-content-blocks";
+import { ContentBlockList } from "@/components/ui/custom/content-block-list";
+import { SUSTAINABILITY_CONTENT_BLOCKS } from "@/data/content/sustainability/sustainability-blocks-data";
 
 export default function SustainabilityPage() {
     return (
@@ -15,7 +16,7 @@ export default function SustainabilityPage() {
                 />
             </section>
 
-            <SustainabilityContentBlocks />
+            <ContentBlockList blocks={SUSTAINABILITY_CONTENT_BLOCKS} />
         </main>
     );
 }

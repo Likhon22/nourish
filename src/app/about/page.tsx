@@ -2,7 +2,8 @@ import { VideoBanner } from "@/components/ui/custom/video-banner";
 import { motion } from "framer-motion";
 import { AboutHero } from "@/components/features/about/about-hero";
 import { AboutTimeline } from "@/components/features/about/about-timeline";
-import { AboutContentBlocks } from "@/components/features/about/about-content-blocks";
+import { ContentBlockList } from "@/components/ui/custom/content-block-list";
+import { ABOUT_CONTENT_BLOCKS } from "@/data/content/about/content-blocks-data";
 
 export const metadata = {
     title: "About Us - Nourish",
@@ -14,7 +15,7 @@ export default function AboutPage() {
         <main className="min-h-screen">
             <AboutHero />
             <AboutTimeline />
-            <AboutContentBlocks />
+            <ContentBlockList blocks={ABOUT_CONTENT_BLOCKS} />
         </main>
     );
 }
