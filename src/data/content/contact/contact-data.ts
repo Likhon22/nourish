@@ -1,7 +1,7 @@
 export interface LocationData {
     id: string;
     city: string;
-    type: string;
+
     address: string;
     phone: string;
     email: string;
@@ -21,7 +21,6 @@ export const CORPORATE_LOCATIONS: LocationData[] = [
     {
         id: "hq-dhaka",
         city: "Dhaka",
-        type: "Corporate Headquarters",
         address: "Nourish Center, Bir Uttam Mir Shawkat Sarak, Tejgaon I/A, Dhaka-1208, Bangladesh",
         phone: "+880-2-2222-12345",
         email: "info@nourish-poultry.com",
@@ -30,7 +29,6 @@ export const CORPORATE_LOCATIONS: LocationData[] = [
     {
         id: "factory-gazipur",
         city: "Gazipur",
-        type: "Primary Feed Mill & Processing",
         address: "Mawna, Sreepur, Gazipur, Bangladesh",
         phone: "+880-9612-345678",
         email: "operations@nourish-poultry.com",
@@ -39,7 +37,6 @@ export const CORPORATE_LOCATIONS: LocationData[] = [
     {
         id: "hatchery-bogra",
         city: "Bogra",
-        type: "Regional Hatchery Unit",
         address: "Sherpur Road, Bogra, Bangladesh",
         phone: "+880-51-67890",
         email: "hatchery.bogra@nourish-poultry.com",
@@ -65,7 +62,7 @@ export const MEDIA_CONTACT = {
     description: "For press releases, interview requests, and corporate communications, please reach out to our media relations office. We are happy to provide journalists with the resources and insights they need.",
     email: "media@nourish-poultry.com",
     phone: "+880-2-2222-12345 Ext: 505",
-    mediaKitLink: "/resources/media-kit.zip"
+
 };
 
 export const WHATSAPP_CONTACT = {

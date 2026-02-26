@@ -31,12 +31,7 @@ export function CorporateLocations() {
                             className="object-cover"
                         />
 
-                        {/* Top Badge */}
-                        <div className="absolute top-6 left-5 z-20">
-                            <span className="px-4 py-1.5 bg-blue-600/90 backdrop-blur-sm text-white text-xs font-bold rounded-full uppercase tracking-wider">
-                                {location.type}
-                            </span>
-                        </div>
+
 
                         {/* Bottom Text Overlay Strip */}
                         <div className={cn(

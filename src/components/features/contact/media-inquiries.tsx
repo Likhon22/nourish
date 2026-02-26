@@ -51,15 +51,7 @@ export function MediaInquiries() {
                             )}
                         </div>
 
-                        {MEDIA_CONTACT.mediaKitLink && (
-                            <a
-                                href={MEDIA_CONTACT.mediaKitLink}
-                                className="inline-flex items-center gap-3 border-2 border-[#006837] text-[#006837] hover:bg-[#006837] hover:text-white px-8 py-4 rounded-full font-bold transition-colors"
-                            >
-                                <Download className="size-5" />
-                                Download Full Media Kit (.zip)
-                            </a>
-                        )}
+
                     </motion.div>
                 </div>
 

@@ -82,7 +82,7 @@ export function InvestorRelations() {
                             ))}
                         </div>
 
-                        <PrimaryButton text="Access Investor Portal" className="w-full justify-center" />
+
                     </motion.div>
                 </div>
 
