@@ -23,7 +23,7 @@ export function ExpandingGrid<T extends { id: string | number }>({
 
     return (
         <LayoutGroup>
-            <div className={cn("flex flex-col md:flex-row gap-0 w-full", containerClassName)}>
+            <div className={cn("flex flex-row gap-0 w-full h-full", containerClassName)}>
                 {items.map((item, index) => (
                     <motion.div
                         key={item.id}
@@ -32,12 +32,14 @@ export function ExpandingGrid<T extends { id: string | number }>({
                         onMouseLeave={() => setHoveredIndex(null)}
                         className={cn(
                             "relative group cursor-pointer overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]",
-                            "h-full w-full",
-                            "flex-none md:flex-1",
+                            "h-full flex-1",
+                            // Hide items beyond the first 3 on mobile
+                            index >= 3 ? "hidden md:block" : "block",
                             itemClassName
                         )}
                         style={{
-                            flexGrow: hoveredIndex === index ? activeFlexScale : 1
+                            flexGrow: hoveredIndex === index ? activeFlexScale : 1,
+                            zIndex: hoveredIndex === index ? 10 : 1
                         } as any}
                     >
                         {renderItem(item, hoveredIndex === index)}

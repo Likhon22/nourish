@@ -14,14 +14,17 @@ export function BusinessSegment({ segment }: BusinessSegmentProps) {
 
     return (
         <div className="max-w-[94rem] mx-auto">
-            <div className="flex flex-col lg:flex-row min-h-screen">
+            <div className={cn(
+                "flex flex-col lg:flex-row",
+                "md:min-h-screen"
+            )}>
 
                 {/* Image Column - Only visible on Mobile */}
                 <div className={cn(
-                    "lg:hidden w-full relative min-h-[300px] flex items-center justify-center p-6",
-                    isImageLeft ? "order-1" : "order-1" // Always top on mobile for consistent flow
+                    "lg:hidden w-full relative flex items-center justify-center p-6 pb-2",
+                    isImageLeft ? "order-1" : "order-1"
                 )}>
-                    <div className="relative w-full h-64 rounded-2xl overflow-hidden shadow-xl">
+                    <div className="relative w-full h-56 rounded-2xl overflow-hidden shadow-lg border border-slate-100">
                         <Image
                             src={segment.image}
                             alt={segment.title}
@@ -33,7 +36,7 @@ export function BusinessSegment({ segment }: BusinessSegmentProps) {
 
                 {/* Content Column - Centered horizontally in its half */}
                 <div className={cn(
-                    "w-full lg:w-1/2 px-6 py-12 md:py-24 lg:py-32 flex flex-col justify-start lg:pt-32",
+                    "w-full lg:w-1/2 px-6 py-6 md:py-24 lg:py-32 flex flex-col justify-start lg:pt-32",
                     isImageLeft ? "lg:ml-[50%] lg:pl-20" : "lg:mr-[50%] lg:pr-20 lg:order-1"
                 )}>
                     <div className="max-w-2xl mx-auto lg:mx-0">

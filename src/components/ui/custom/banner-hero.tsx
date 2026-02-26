@@ -42,16 +42,16 @@ export function BannerHero({
                     transition={{ duration: 0.8 }}
                     className="max-w-3xl mx-auto"
                 >
-                    <span className="inline-block px-5 py-2 rounded-full bg-white/10 border border-white/20 text-white text-[13px] font-bold tracking-wider uppercase mb-6 backdrop-blur-sm">
+                    <span className="inline-block px-5 py-2 rounded-full bg-white/10 border border-white/20 text-white text-[13px] font-bold tracking-wider uppercase mb-3 md:mb-6 backdrop-blur-sm">
                         {badge}
                     </span>
-                    <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight leading-tight mb-6">
+                    <h1 className="text-3xl md:text-6xl font-bold text-white tracking-tight leading-tight mb-4 md:mb-6">
                         {title}
                     </h1>
-                    <p className="text-lg md:text-xl text-white/80 leading-relaxed font-normal">
+                    <p className="text-base md:text-xl text-white/80 leading-relaxed font-normal">
                         {description}
                     </p>
-                    {cta && <div className="mt-10">{cta}</div>}
+                    {cta && <div className="mt-6 md:mt-10">{cta}</div>}
                 </motion.div>
             </div>
         </section>

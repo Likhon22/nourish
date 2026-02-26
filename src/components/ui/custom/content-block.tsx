@@ -27,8 +27,8 @@ export function ContentBlock({ block, index }: ContentBlockProps) {
     return (
         <div id={block.id} className="w-full">
             {/* ── STICKY IMAGE SECTION ─────────────────────────────────── */}
-            <div ref={containerRef} className="relative h-[200vh]">
-                <div className="sticky top-0 h-screen w-full overflow-hidden px-4 md:px-8">
+            <div ref={containerRef} className="relative h-[120vh] md:h-[200vh]">
+                <div className="sticky top-0 h-[50vh] md:h-screen w-full overflow-hidden px-4 md:px-8 pt-4 md:pt-0">
                     <motion.div
                         className="relative w-full h-full overflow-hidden rounded-2xl"
                         style={{ scale: imageScale, transformOrigin: "center center" }}
@@ -50,11 +50,11 @@ export function ContentBlock({ block, index }: ContentBlockProps) {
                             style={{ y: textY, opacity: textOpacity, willChange: "transform, opacity" }}
                         >
                             {block.imageSubheading && (
-                                <p className="text-white/80 text-sm md:text-base uppercase tracking-[0.3em] font-semibold mb-4">
+                                <p className="text-white/80 text-[10px] md:text-base uppercase tracking-[0.3em] font-semibold mb-2 md:mb-4 drop-shadow-sm">
                                     {block.imageSubheading}
                                 </p>
                             )}
-                            <h2 className="text-white text-4xl md:text-6xl font-bold tracking-tight leading-tight">
+                            <h2 className="text-white text-3xl md:text-6xl font-bold tracking-tight leading-tight drop-shadow-md">
                                 {block.imageCaption}
                             </h2>
                         </motion.div>
@@ -63,8 +63,8 @@ export function ContentBlock({ block, index }: ContentBlockProps) {
             </div>
 
             {/* ── TWO-COLUMN CONTENT ───────────────────────────────────── */}
-            <div className="max-w-5xl mx-auto px-6 py-20 md:py-28 bg-white">
-                <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-12 md:gap-16">
+            <div className="max-w-5xl mx-auto px-6 py-12 md:py-28 bg-white">
+                <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-8 md:gap-16">
 
                     {/* Left: Large title with thin underline */}
                     <div className="md:pt-1">
@@ -75,43 +75,43 @@ export function ContentBlock({ block, index }: ContentBlockProps) {
                             transition={{ duration: 0.6 }}
                             className="md:sticky md:top-32"
                         >
-                            <h2 className="text-2xl md:text-3xl font-bold text-slate-900 leading-snug whitespace-pre-line">
+                            <h2 className="text-xl md:text-3xl font-bold text-slate-900 leading-snug whitespace-pre-line">
                                 {block.leftTitle}
                             </h2>
-                            <div className="mt-4 w-10 h-[2px] bg-slate-300" />
+                            <div className="mt-3 md:mt-4 w-10 h-[2px] bg-slate-300" />
                         </motion.div>
                     </div>
 
                     {/* Dynamic content groups  */}
-                    <div className="space-y-8">
+                    <div className="space-y-6 md:space-y-8">
                         {block.contentGroups.map((group, gi) => (
-                            <div key={gi} className="space-y-4">
+                            <div key={gi} className="space-y-3 md:space-y-4">
                                 {/* Optional section mini-label with divider */}
                                 {group.sectionLabel && (
-                                    <div className="pt-2">
-                                        <span className="text-[13px] font-semibold uppercase tracking-[0.22em] text-slate-400">
+                                    <div className="pt-1 md:pt-2">
+                                        <span className="text-[11px] md:text-[13px] font-semibold uppercase tracking-[0.22em] text-slate-400">
                                             {group.sectionLabel}
                                         </span>
-                                        <div className="mt-2 w-full h-[1px] bg-slate-200" />
+                                        <div className="mt-1 md:mt-2 w-full h-[1px] bg-slate-200" />
                                     </div>
                                 )}
 
                                 {/* Optional prose paragraph */}
                                 {group.paragraph && (
-                                    <p className="text-base md:text-lg text-slate-700 leading-relaxed">
+                                    <p className="text-sm md:text-lg text-slate-700 leading-relaxed">
                                         {group.paragraph}
                                     </p>
                                 )}
 
                                 {/* Optional bullet list — supports bold term prefix */}
                                 {group.bullets && group.bullets.length > 0 && (
-                                    <ul className="space-y-3 pt-1">
+                                    <ul className="space-y-2 md:space-y-3 pt-1">
                                         {group.bullets.map((bullet, bi) => (
-                                            <li key={bi} className="flex items-start gap-3">
-                                                <span className="w-1.5 h-1.5 rounded-full bg-slate-400 mt-[0.6rem] flex-shrink-0" />
-                                                <span className="text-base text-slate-700 leading-relaxed">
+                                            <li key={bi} className="flex items-start gap-2 md:gap-3">
+                                                <span className="w-1.5 h-1.5 rounded-full bg-slate-400 mt-[0.5rem] md:mt-[0.6rem] flex-shrink-0" />
+                                                <span className="text-sm md:text-base text-slate-700 leading-relaxed">
                                                     {bullet.term && (
-                                                        <strong className="font-semibold text-lg text-slate-900">
+                                                        <strong className="font-semibold text-base md:text-lg text-slate-900">
                                                             {bullet.term}:{" "}
                                                         </strong>
                                                     )}
@@ -126,8 +126,8 @@ export function ContentBlock({ block, index }: ContentBlockProps) {
 
                         {/* Optional pull-quote box */}
                         {block.quote && (
-                            <blockquote className="mt-4 px-6 py-5 bg-slate-50 border border-slate-200 rounded-xl">
-                                <p className="text-slate-600 text-base md:text-lg italic leading-relaxed">
+                            <blockquote className="mt-3 md:mt-4 px-4 md:px-6 py-4 md:py-5 bg-slate-50 border border-slate-200 rounded-xl">
+                                <p className="text-slate-600 text-sm md:text-lg italic leading-relaxed">
                                     &ldquo;{block.quote}&rdquo;
                                 </p>
                             </blockquote>

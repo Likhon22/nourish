@@ -66,11 +66,11 @@ export function AboutTimeline() {
                 <div className="relative max-w-5xl mx-auto">
 
                     {/* Static Background Spine */}
-                    <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-[1px] bg-slate-200" />
+                    <div className="absolute left-[24px] md:left-1/2 -translate-x-1/2 top-0 bottom-0 w-[1px] bg-slate-200" />
 
                     {/* Animated Colored Spine */}
                     <motion.div
-                        className="absolute left-[calc(50%-0.5px)] top-0 w-[1px] bg-[#e29e58] origin-top"
+                        className="absolute left-[calc(24px-0.5px)] md:left-[calc(50%-0.5px)] top-0 w-[1px] bg-[#e29e58] origin-top"
                         style={{ scaleY: spineHeight }}
                     />
 

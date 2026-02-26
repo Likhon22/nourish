@@ -18,8 +18,8 @@ export function BusinessSection() {
 
             <ExpandingGrid
                 items={BUSINESSES}
-                containerClassName="h-auto md:h-[500px] lg:h-[550px]"
-                itemClassName="h-[350px] md:h-full"
+                containerClassName="h-[450px] md:h-[500px] lg:h-[550px]"
+                itemClassName="h-full"
                 renderItem={(business, isHovered) => (
                     <>
                         {/* Background Image */}
@@ -35,10 +35,10 @@ export function BusinessSection() {
                             "absolute bottom-0 left-0 right-0 z-10 transition-all duration-500 bg-black/60 backdrop-blur-[2px]",
                             isHovered ? "h-auto py-6" : "h-16 flex items-center"
                         )}>
-                            <div className="px-5 w-full">
+                            <div className="px-3 w-full">
                                 <motion.h3
                                     layout="position"
-                                    className="text-[14px] md:text-[15px] font-semibold tracking-wide text-white"
+                                    className="text-[12px] md:text-[15px] font-semibold tracking-wide text-white leading-tight break-words"
                                 >
                                     {business.title}
                                 </motion.h3>

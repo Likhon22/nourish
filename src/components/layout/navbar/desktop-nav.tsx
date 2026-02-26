@@ -81,7 +81,7 @@ export function DesktopNav({ isScrolled }: DesktopNavProps) {
                 }}
                 onMouseLeave={handleMouseLeave}
             >
-                <div className="w-[768px] h-[280px] bg-white border border-slate-100 shadow-xl rounded-lg overflow-hidden">
+                <div className="w-[768px] h-[220px] bg-white   shadow-xl rounded-lg overflow-hidden">
                     {NAV_LINKS.map((link) => (
                         link.megaMenu && activeMenu === link.label && (
                             <div key={link.label} className="h-full">

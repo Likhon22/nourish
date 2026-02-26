@@ -67,8 +67,9 @@ export function BusinessSections({ segments }: BusinessSectionsProps) {
                         key={segment.id}
                         id={segment.id}
                         className={cn(
-                            "min-h-[80vh] flex flex-col justify-center", // Better sticky duration
-                            index === 0 ? "pt-3 pb-12" : "py-24" // pt-3 = 12px
+                            "flex flex-col justify-center",
+                            "md:min-h-[80vh]",
+                            index === 0 ? "pt-3 pb-8 md:pb-12" : "py-12 md:py-24"
                         )}
                     >
                         <SectionTracker

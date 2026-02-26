@@ -29,12 +29,14 @@ export function SustainabilityBanner() {
                         )} />
 
                         {/* Centered Text */}
-                        <div className="absolute inset-0 flex items-center justify-center z-20">
+                        <div className="absolute inset-0 flex items-center justify-center z-20 px-2">
                             <motion.h2
                                 layout="position"
                                 className={cn(
-                                    "text-white font-bold tracking-tight text-center transition-all duration-500",
-                                    isHovered ? "text-6xl md:text-8xl drop-shadow-[0_0_20px_rgba(255,255,255,0.8)]" : "text-4xl md:text-5xl drop-shadow-md"
+                                    "text-white font-bold tracking-tight text-center transition-all duration-500 break-words max-w-[90%]",
+                                    isHovered
+                                        ? "text-4xl md:text-8xl drop-shadow-[0_0_20px_rgba(255,255,255,0.8)]"
+                                        : "text-xl md:text-5xl drop-shadow-md"
                                 )}
                             >
                                 {pillar.title}

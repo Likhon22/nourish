@@ -93,18 +93,28 @@ export function MobileNav({ isScrolled }: MobileNavProps) {
                             <div key={link.label} className="border-b border-slate-50">
                                 {link.megaMenu ? (
                                     <div className="flex flex-col">
-                                        <button
-                                            onClick={() => toggleAccordion(link.label)}
-                                            className="w-full flex items-center justify-between px-6 py-4 text-base font-semibold text-slate-800 hover:text-[#006837] transition-colors uppercase tracking-wider text-left bg-white"
-                                        >
-                                            {link.label}
-                                            <ChevronDown
-                                                className={cn(
-                                                    "size-4 transition-transform duration-300 text-slate-400",
-                                                    openAccordion === link.label ? "rotate-180" : ""
-                                                )}
-                                            />
-                                        </button>
+                                        {/* Parent row: label navigates, chevron toggles accordion */}
+                                        <div className="flex items-center justify-between border-b border-slate-50">
+                                            <Link
+                                                href={link.href}
+                                                onClick={closeMenu}
+                                                className="flex-1 px-6 py-4 text-base font-semibold text-slate-800 hover:text-[#006837] transition-colors uppercase tracking-wider text-left"
+                                            >
+                                                {link.label}
+                                            </Link>
+                                            <button
+                                                onClick={() => toggleAccordion(link.label)}
+                                                className="px-4 py-4 text-slate-400 hover:text-[#006837] transition-colors"
+                                                aria-label={`Toggle ${link.label} submenu`}
+                                            >
+                                                <ChevronDown
+                                                    className={cn(
+                                                        "size-4 transition-transform duration-300",
+                                                        openAccordion === link.label ? "rotate-180" : ""
+                                                    )}
+                                                />
+                                            </button>
+                                        </div>
 
                                         {/* ACCORDION CONTENT */}
                                         <div
@@ -119,10 +129,10 @@ export function MobileNav({ isScrolled }: MobileNavProps) {
                                                         key={sublink.label}
                                                         href={sublink.href}
                                                         onClick={closeMenu}
-                                                        className="group relative px-8 py-3 w-fit text-sm font-medium text-slate-700 hover:text-slate-900 transition-all block"
+                                                        className="group relative px-8 py-2.5 w-full text-sm font-medium text-slate-600 hover:text-[#006837] transition-all block break-words"
                                                     >
                                                         {sublink.label}
-                                                        <span className="absolute bottom-2 left-8 w-[calc(100%-4rem)] h-[2px] bg-slate-700 transition-transform duration-300 origin-left scale-x-0 group-hover:scale-x-100" />
+                                                        <span className="absolute bottom-1.5 left-8 w-[calc(100%-4rem)] h-[1.5px] bg-[#006837] transition-transform duration-300 origin-left scale-x-0 group-hover:scale-x-100" />
                                                     </Link>
                                                 ))}
                                             </div>
